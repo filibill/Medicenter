@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <title>Agendamento</title>
+        <link rel="stylesheet" href="assets/css/consulstyle.css"/>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="leftside">
+
+            </div>
+            <div class="rightside">
+                <h1>Marque uma consulta</h1>
+
+                <form method="post" class="exame">
+                    <label>
+                        Especialidade:<br/>
+                        <select name="medico" data-rules="option">
+                            <option value="" selected disabled>Selecione um atendimento:</option>
+                            <option>Cardiologista</option>
+                            <option>Odontologista</option>
+                            <option>Ortopedista</option>
+                            <option>Neurologista</option>
+                            <option>Pediatra</option>
+                            <option>Urologista</option>
+                        </select>
+                    </label>
+                    <label>
+                        Seu Nome:<br/>
+                        <input type="text" name="name" data-rules="required|min=2"/>
+                    </label>
+                    <label>
+                        Seu Telefone:<br/>
+                        <input type="number" name="telephone" data-rules="required|min=4"/>
+                    </label>
+                    <label>
+                        Sua Identidade:<br/>
+                        <input type="number" name="Identidade" data-rules="required|min=7|max=7"/>
+                    </label>
+                    <label>
+                        Seu CPF:<br/>
+                        <input type="number" name="CPF" data-rules="required|min=11|max=11"/>
+                    </label>
+                    <div class="botoes">
+                        <input type="submit" value="Agendar"/>
+                        <button><a href="index.html">Voltar</a></button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="assets/js/consulscript.js"></script>
+    </body>
+</html>

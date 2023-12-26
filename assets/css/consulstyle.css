@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.screen{
+    display: flex;
+    height: 100vh;
+}
+.leftside{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/imgagenda.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+}
+.rightside{
+    width: 400px;
+    height: 620px;
+    background-color: #36a9e1;
+    padding: 50px;
+    overflow-x: hidden;
+}
+.rightside h1{
+    color: #fff
+}
+.rightside label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.rightside input,
+.rightside select{
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botoes input{
+    background-color: #0079c7;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+}
+.botoes button{
+    background-color: #0079c7;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.botoes button a{
+    text-decoration: none;
+    color: #000;
+}
+.error{
+    font-size: 11px;
+    background-color: #f00;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+@media(max-width:450px){
+    .screen{
+        width: auto;
+    }
+    .leftside{
+        display: none;
+    }
+    .rightside{
+        width: 620px;
+        height: auto;
+        flex-direction: column;
+    }
+    .rightside h1{
+        font-size: 35px;
+    }
+    .rightside label{
+        font-size: 25px;
+    }
+    .rightside input,
+    .rightside select{
+        font-size: 20px;
+    }
+    .botoes input{
+        width: 120px;
+        height: 75px;
+    }
+    .botoes button{
+        width: 120px;
+        height: 75px;
+        font-size: 20px;
+    }
+    .error{
+        font-size: 20px;
+    }
+}
+@media(min-width:450px) and (max-width:950px){
+    .leftside{
+       display: none;
+    }
+    .rightside{
+        width: 820px;
+        height: auto;
+    }
+    .rightside h1{
+        font-size: 40px;
+    }
+    .rightside label{
+        font-size: 30px;
+    }
+    .rightside input,
+    .rightside select{
+        font-size: 24px;
+    }
+    .botoes input{
+        width: 120px;
+        height: 75px;
+    }
+    .botoes button{
+        width: 120px;
+        height: 75px;
+        font-size: 24px;
+    }
+    .error{
+        font-size: 20px;
+    }
+
+}
