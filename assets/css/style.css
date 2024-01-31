@@ -203,14 +203,19 @@ article .news_resume{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 20px;
 }
 .dicon{
     display: flex;
     flex: 1;
+    background-color: #36a9e1;
+    justify-content:space-evenly;
 }
 .dicon a{
     margin-top: 10px;
     padding-top: 10px;
+    text-align: center;
+    color: #fff;
 }
 .dicon img{
     width: 120px;
