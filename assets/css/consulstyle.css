@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Quicksand:wght@600&display=swap');
+
 *{
     box-sizing: border-box;
-    font-family: 'Quicksand',Helvetica,sans-serif;
+    font-family: 'Montserrat',Helvetica,sans-serif;
 }
 body{
     margin: 0;
@@ -27,6 +29,7 @@ body{
     overflow-x: hidden;
 }
 .rightside h1{
+    font-family: 'Quicksand';
     color: #fff
 }
 .rightside label{
