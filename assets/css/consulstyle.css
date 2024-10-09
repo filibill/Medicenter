@@ -19,11 +19,11 @@ body{
     background-image: url('../images/imgagenda.jpg');
     background-position: center;
     background-size: cover;
-    height: 620px;
+    height: 680px;
 }
 .rightside{
     width: 400px;
-    height: 620px;
+    height: 680px;
     background-color: #36a9e1;
     padding: 50px;
     overflow-x: hidden;
