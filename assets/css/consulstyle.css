@@ -11,6 +11,7 @@ body{
 .screen{
     display: flex;
     height: 100vh;
+    overflow-x: hidden;
 }
 .leftside{
     flex: 1;
@@ -19,14 +20,13 @@ body{
     background-image: url('../images/imgagenda.jpg');
     background-position: center;
     background-size: cover;
-    height: 680px;
+    height: 720px;
 }
 .rightside{
     width: 400px;
-    height: 680px;
+    height: 720px;
     background-color: #36a9e1;
     padding: 50px;
-    overflow-x: hidden;
 }
 .rightside h1{
     font-family: 'Quicksand';
